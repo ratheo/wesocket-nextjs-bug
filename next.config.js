@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  rewrites: async () => [
+    {
+      source: "/websocket",
+      destination: "/Rewrite",
+    },
+  ],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
